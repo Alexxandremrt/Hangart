@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tip: {fileID: 347328796}
-  drawingMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  drawingMaterial: {fileID: 2100000, guid: 816c4140fa9d70241aae7cc776e54361, type: 2}
   tipMaterial: {fileID: 2100000, guid: 816c4140fa9d70241aae7cc776e54361, type: 2}
   penWidth: 0.1
   penColors:

@@ -66,7 +66,9 @@ public class Pen : MonoBehaviour
         {
             index = 0;
             currentDrawing = new GameObject().AddComponent<LineRenderer>();
-            currentDrawing.material = drawingMaterial;
+            Material newMaterial = new Material(Shader.Find("Standard"));
+            newMaterial.color = tipMaterial.color;
+            currentDrawing.material = newMaterial;
             currentDrawing.startColor = currentDrawing.endColor = penColors[currentColorIndex];
             currentDrawing.startWidth = currentDrawing.endWidth = penWidth;
             currentDrawing.positionCount = 1;
