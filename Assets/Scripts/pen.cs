@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.InputSystem;
 
 public class Pen : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Pen : MonoBehaviour
     private int index;
     private int currentColorIndex;
 
+    public InputActionProperty ondraw;
+
     private void Start()
     {
         currentColorIndex = 0;
@@ -26,10 +29,10 @@ public class Pen : MonoBehaviour
 
     private void Update()
     {
-        bool isRightHandDrawing = Input.GetButton("Fire1");
         float scrollAmount = Input.GetAxis("Mouse ScrollWheel");
+        float ondrawvalue = ondraw.action.ReadValue<float>();
         //bool isLeftHandDrawing = false;
-        if (isRightHandDrawing)
+        if (ondrawvalue == 1)
         {
             Draw();
         }
@@ -39,7 +42,6 @@ public class Pen : MonoBehaviour
         }
         else if (Input.GetButton("Jump"))
         {
-            Debug.Log("change color");
             SwitchColor();
         }   
         else if (scrollAmount < 0)

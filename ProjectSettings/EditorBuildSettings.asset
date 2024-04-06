@@ -9,7 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/hangar.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fb09c331770abe84cbb7a898638feb01,
-      type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c9867a6f3979c04468e5662857e27d81,
-      type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e2df8f574a2209d4ebd5bba1f7381289, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fb09c331770abe84cbb7a898638feb01, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c9867a6f3979c04468e5662857e27d81, type: 2}
